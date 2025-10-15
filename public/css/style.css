@@ -1,0 +1,138 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+    background: linear-gradient(black, pink);
+}
+
+header {
+    background: linear-gradient(to right, black, grey);
+    color: white;
+    padding: 23px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: skyblue;
+    outline: 2px dashed black;
+}
+
+button {
+    background-color: skyblue;
+    color: black;
+    border: none;
+    padding: 0.7rem 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: deepskyblue;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: black; 
+    outline: 2px dashed skyblue; 
+}
+
+section {
+    padding: 35px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fragancia {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+}
+
+.aroma, .productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: white;
+}
+
+.aroma div, .productos div {
+    background: linear-gradient(pink, white);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos div {
+    background: linear-gradient(black, pink);
+}
+
+.productos img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.productos img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: pink;
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer a i {
+    margin-right: 0.5rem;
+    font-size: 1.10rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
